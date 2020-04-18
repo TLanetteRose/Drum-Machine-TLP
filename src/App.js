@@ -4,7 +4,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div id="drum-machine" className="container">
       
     </div>
   );
