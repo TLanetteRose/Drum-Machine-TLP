@@ -2,12 +2,17 @@ import React from 'react';
 import './App.css';
 
 
-function App() {
-  return (
-    <div id="drum-machine" className="container">
-      
-    </div>
-  );
+
+class App extends React.Component {
+  
+
+  render(){
+    return(
+      <div id="drum-machine" className="container">
+
+      </div>
+    )
+  }
 }
 
-export default App;
+export default App
