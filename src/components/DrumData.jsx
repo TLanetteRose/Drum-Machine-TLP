@@ -28,7 +28,7 @@ export const DrumData = [{
     }, {
     key= 68,
     keyTrigger= 'D',
-    url= 'Open-HH'
+    id= 'Open-HH',
     url= 'https://s3.amazonaws.com/freecodecamp/drums/Bld_H1.mp3'
     }, {
     key= 90,
