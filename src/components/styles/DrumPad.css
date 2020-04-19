@@ -1,0 +1,11 @@
+.drum-pad {
+    position: relative;
+    float: left;
+    width: 100px;
+    height: 80px;
+    margin-right: 10px;
+    border-radius: 5px;
+    padding-top: 35px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
