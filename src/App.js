@@ -125,6 +125,7 @@ const bankTwo = [{
 
 
 class PadBank extends React.Component {
+  // eslint-disable-next-line 
   constructor(props) {
     super(props);
   }
@@ -227,6 +228,24 @@ class App extends React.Component {
         <Container id="drum-machine" className="inner-container">
           <Header />
           <DrumMachine />
+          <PadBank power={this.state.power} updateDisplay= {this.displayClipName} clipVolume= {this.state.sliderVal} currentPadBank= {this.state.currentPadBank} />
+          <div className="controls-container">
+            <div className="control">
+              <p>Power</p>
+              <div onClick= {this.powerControl} className= "select">
+                <div style= {powerSlider} className="inner"/>
+              </div>
+            </div>
+            <div className="volume-slider">
+              <input type="range" min="0" max="1" step="0.01" value= {this.state.sliderVal} onChange= {this.adjustVolume}/>
+            </div>
+            <div className="control">
+              <p>Bank</p>
+              <div onClick= {this.selectBank} className="select">
+                <div style={bankSlider} className="inner"/>
+              </div>
+            </div>
+          </div>
           <Footer />
         </Container>
       </div>
