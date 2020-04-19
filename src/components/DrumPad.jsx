@@ -81,7 +81,7 @@ export default class DrumPad extends Component {
               id={this.props.keyTrigger}
               src={this.props.clip}
             ></audio>
-            {this.props.padLetter}
+            {this.props.keyTrigger}
           </div>
         );
     }
