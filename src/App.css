@@ -6,6 +6,9 @@
   text-align: center;
 }
 
-
+.container {
+  width: 100vh;
+  height: 100vh;
+}
 
 
