@@ -3,7 +3,8 @@ import './App.css';
 
 import Container from 'react-bootstrap/Container';
 
-
+import {Header} from '../src/components/Header';
+import {Footer} from '../src/components/Footer';
 
 
 
@@ -124,6 +125,15 @@ const bankTwo = [{
 export default class App extends React.Component {
   constructor(props) {
     super(props);
+  }
+
+  render() {
+    return (
+      <Container className="container">
+        <Header />
+        <Footer />
+      </Container>
+    )
   }
 }
 
