@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './App.css';
 
 import Container from 'react-bootstrap/Container';
@@ -122,9 +122,13 @@ const bankTwo = [{
 ];
 
 
-export default class App extends React.Component {
+export default class App extends Component {
   constructor(props) {
     super(props);
+    
+
+
+
   }
 
   render() {
