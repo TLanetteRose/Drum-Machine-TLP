@@ -6,7 +6,7 @@ import Container from 'react-bootstrap/Container';
 import {Header} from '../src/components/Header';
 import {Footer} from '../src/components/Footer';
 import DrumPad from '../src/components/DrumPad';
-import {DrumMachine} from '../src/components/DrumMachine';
+//import {DrumMachine} from '../src/components/DrumMachine';
 
 
 
@@ -227,7 +227,10 @@ class App extends React.Component {
       <div>
         <Container id="drum-machine" className="inner-container">
           <Header />
-          <DrumMachine />
+          <div className="drum-display" id="display">
+            <h1>{this.state.display}</h1>
+          </div>
+          
           <PadBank power={this.state.power} updateDisplay= {this.displayClipName} clipVolume= {this.state.sliderVal} currentPadBank= {this.state.currentPadBank} />
           <div className="controls-container">
             <div className="control">

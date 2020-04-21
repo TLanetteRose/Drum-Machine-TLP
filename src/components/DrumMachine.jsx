@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/DrumMachine.css';
 
-import  {Display}  from "./Display";
+//import  {Display}  from "./Display";
 
 
 import Container from 'react-bootstrap/Container';
@@ -9,7 +9,7 @@ import Container from 'react-bootstrap/Container';
 export const DrumMachine = () => (
     <Container className="drum-container">
         <div className="drum">
-            <Display id="display" />
+          <Display id="display" />
             
         </div>
     </Container>

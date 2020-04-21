@@ -6,7 +6,7 @@ import Container from 'react-bootstrap/Container';
 export const Display = (props) => (
     <Container className="display-container">
         <div id={props.id} className="drumDisplay">
-            <h1>{this.state.display}</h1>
+            <h1>{this.state.Display}</h1>
         </div>
     </Container>
 ) 
