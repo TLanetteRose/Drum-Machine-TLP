@@ -8,7 +8,9 @@
 
 .container {
   width: 100vh;
-  height: 80%;
+  height: 100%;
+  
+
 }
 
 .drum {
@@ -17,17 +19,20 @@
   justify-content: center;
   align-items: center;
   width: 400px;
-  height: 500px;
+  height: 600px;
   padding: 15px;
   background-color: var(--color-dk-cyan);
   margin: 0 auto;
   margin-top: 30px;
-  border-radius: 8px;
+  /*border-radius: 8px;*/
+  outline: 5px solid var(--color-deep-navy-blue);
 
 }
 
-.drumDisplay {
+.drum-display {
+  width: 250px;
   background-color: var(--color-deep-navy-blue);
+  height: 5px;
   color: var(--color-matte-gold);
   text-transform: uppercase;
   font-weight: 700;
@@ -44,5 +49,9 @@
  padding-bottom: 20px;
  width: 100px * 3 + 32;
  height: 80px * 3 + 32;
+}
+
+.control-container {
+  
 }
 
