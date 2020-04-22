@@ -171,7 +171,7 @@ export default class App extends Component {
         sliderVal: e.target.value,
         display: "Volume: " + Math.round(e.target.value * 100)
       });
-      setTimeout(() => this.clearDisplay(),1000);
+      setTimeout(() => this.clearDisplay(),100);
     }
   }
   clearDisplay() {
@@ -201,6 +201,30 @@ export default class App extends Component {
     return (
       <Container className="container">
         <Header />
+        <div id="drum-machine" className="drum">
+          <PadBank power={this.state.power}
+            updateDisplay={this.displayClipName} clipVolume={this.state.sliderVal} currentPadBank={this.state.currentPadBank} />
+          <div className="control-container">
+            <div className="control">
+              <p>Power</p>
+              <div onClick={this.powerControl} className="select">
+                <div style={powerSlider} className="inner" />
+              </div>
+            </div>
+            <p id="display">
+              {this.state.display}
+            </p>
+            <div className="volume-slider">
+              <input type="range" min="0" max="1" step="0.01" value= {this.state.sliderVal} onChange={this.adjustVolume} />
+            </div>
+            <div className="control">
+              <p>Bank</p>
+              <div onClick={this.selectBank} className="select">
+                <div style={bankSlider} className="inner" />
+              </div>
+            </div>
+          </div>
+        </div>
         <Footer />
       </Container>
     )

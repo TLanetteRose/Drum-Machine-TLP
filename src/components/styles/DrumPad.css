@@ -1,9 +1,11 @@
 .drum-pad {
+    display: flex;
+    justify-content: center;
     position: relative;
-    float: left;
+    float: right;
     width: 100px;
     height: 80px;
-    margin-right: 10px;
+    margin-right: 20px;
     border-radius: 5px;
     padding-top: 35px;
     box-sizing: border-box;

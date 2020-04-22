@@ -12,8 +12,12 @@
 }
 
 .drum {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 400px;
-  height: 600px;
+  height: 500px;
   padding: 15px;
   background-color: var(--color-dk-cyan);
   margin: 0 auto;
@@ -34,15 +38,11 @@
   border: 1px solid #000000;
 }
 
-.drum-pad {
-  position: relative;
-  float: left;
-  width: 100px;
-  height: 80px;
-  margin-right: 10px;
-  border-radius: 5px;
-  padding-top: 35px;
-  box-sizing: border-box;
-  cursor: pointer;
+.pad-bank {
+ display: inline-block;
+ margin: 10px;
+ padding-bottom: 20px;
+ width: 100px * 3 + 32;
+ height: 80px * 3 + 32;
 }
 
