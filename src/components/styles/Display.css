@@ -1,0 +1,11 @@
+.drumDisplay {
+    background-color: var(--color-deep-navy-blue);
+    color: var(--color-matte-gold);
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 20px 15px;
+    text-align: center;
+    border-radius: 6px;
+    margin-top: 30px;
+    border: 1px solid #000000;
+}

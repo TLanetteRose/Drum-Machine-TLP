@@ -1,0 +1,14 @@
+.jumbotron {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    text-align: center;
+    
+}
+
+@media screen and (max-width: 850px) {
+    .jumbotron {
+        text-align: center;
+    }
+}
