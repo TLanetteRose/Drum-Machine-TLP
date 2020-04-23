@@ -6,6 +6,9 @@ import Container from 'react-bootstrap/Container';
 import {Header} from '../src/components/Header';
 import {Footer} from '../src/components/Footer';
 import DrumPad from '../src/components/DrumPad';
+import logo from './components/images/tribalrebelcowlogo.png';
+
+import Image from 'react-bootstrap/Image';
 
 
 
@@ -204,6 +207,11 @@ export default class App extends Component {
         <div id="drum-machine" className="drum">
           <PadBank power={this.state.power}
             updateDisplay={this.displayClipName} clipVolume={this.state.sliderVal} currentPadBank={this.state.currentPadBank} />
+          <div className="drum-logo">
+            <div className="logo-image">
+              
+            </div>
+          </div>
           <div className="control-container">
             <div className="control">
               <p>Power</p>
