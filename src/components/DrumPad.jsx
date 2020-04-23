@@ -40,15 +40,15 @@ export default class DrumPad extends Component {
       if (this.props.power) {
         this.state.padStyle.backgroundColor === "var(--color-dk-cyan)"
           ? this.setState({
-              padStyle: inactiveStyle,
+              padStyle: inactiveStyle
             })
           : this.setState({
-              padStyle: activeStyle,
+              padStyle: activeStyle
             });
       } else {
         this.state.padStyle.marginTop === 13
           ? this.setState({
-              padStyle: inactiveStyle,
+              padStyle: inactiveStyle
             })
           : this.setState({
               padStyle: {
@@ -57,15 +57,16 @@ export default class DrumPad extends Component {
                 backgroundColor: "var(--color-deep-navy-blue)",
                 boxShadow: "0 3px var(--color-deep-navy-blue)"
               }
-            });
+          });
       }
     }
     playSound(e) {
       const sound = document.getElementById(this.props.keyTrigger);
       sound.currentTime = 0;
       sound.play();
+      this.activatePad();
       setTimeout(() => this.activatePad(), 100);
-      this.props.updateDisplay(this.props.clipId.replace(/-/g,' '));
+      this.props.updateDisplay(this.props.clipId.replace(/-/g, ' '));
     }
     render() {
       return (
