@@ -30,13 +30,13 @@
 }
 
 .drum-display {
-  width: 250px;
+  width: 240px;
   background-color: var(--color-deep-navy-blue);
   height: 5px;
   color: var(--color-matte-gold);
   text-transform: uppercase;
   font-weight: 700;
-  padding: 20px 15px;
+  padding: 20px 0px;
   text-align: center;
   border-radius: 6px;
   margin-top: 30px;
@@ -52,6 +52,43 @@
 }
 
 .control-container {
-  
+  width: 240px;
+  height: 100px * 3 + 32;
+  display: inline-block;
+  margin: 40px 20px 0 10px;
+  vertical-align: top;
 }
 
+.control {
+  width: 100px;
+  margin: auto;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.select {
+  @extend .outer-select;
+}
+.inner {
+  @extend .inner-select;
+}
+
+.select {
+  margin: auto;
+  border: 1px solid black;
+  width: 50px;
+  height: 20px;
+  padding: 1px;
+  background-color: black;
+}
+
+.inner {
+  width: 23px;
+  height: 19px;
+  background: var(--color-matte-gold);
+  border: 1px solid black;
+  box-sizing: border-box;
+  cursor: pointer;
+}
