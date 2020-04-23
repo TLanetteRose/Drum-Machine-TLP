@@ -1,15 +1,14 @@
-.header-container {
+ .header-container {
     display: flex;
     justify-content: center;
-}
+} 
 
 
 .jumbotron {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
-    padding: 20px;
+    height: 100px;
     text-align: center;
 }
 
