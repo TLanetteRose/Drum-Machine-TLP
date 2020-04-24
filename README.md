@@ -9,7 +9,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - React JS
 
 ## Demo of App
-You can view my app [here](https://tlanetterose.github.io/TLP-Markdown-Previewer-FCC/)
+You can view my app [here](https://tlanetterose.github.io/Drum-Machine-TLP/)
 
 ## Project Thoughts
 I enjoy using React JS to design web apps. When I started this project, I had huge ideas about how I wanted set up my app. After some research and really focusing on the project guidelines, my goals became more realistic. 
