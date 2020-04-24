@@ -1,24 +1,25 @@
- .header-container {
-    display: flex;
-    justify-content: center;
-} 
-
 
 .jumbotron {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
 h1 {
     font-family: var(--font-heading);
+    font-size: 46px;
     padding: 20px;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 576px) {
     .jumbotron {
         text-align: center;
     }
+    .jumbotron .header-title  {
+        font-size: 34px;
+    }
+
 }

@@ -34,33 +34,36 @@
   height: 5px;
   color: var(--color-matte-gold);
   text-transform: uppercase;
+  font-size: 26px;
   font-weight: 700;
-  padding: 20px 0px;
+  padding: 30px 5px;
   text-align: center;
-  /*border-radius: 6px;*/
-  margin-top: 30px;
-  border: 1px solid #000000;
+  margin: 30px 0;
+  border: 1px solid var(--color-matte-gold);
 }
+
 
 .pad-bank {
  display: inline-block;
  margin: 10px;
+ padding-top: 20px;
  padding-bottom: 20px;
  width: 100px * 3 + 32;
  height: 80px * 3 + 32;
 }
 
 .control-container {
-  
+  margin-top: -30px;
+  margin-bottom: 40px;
 }
 
 .control {
   width: 100px;
   margin: auto;
 }
-
-p {
+p   {
   font-family: var(--font-text);
+  font-size: 24px;
   color: var(--color-very-lt-gray);
   margin-bottom: 0;
   text-align: center !important;
@@ -91,6 +94,18 @@ p {
 }
 
 input {
-  width: 240px;
+  width: 250px;
   margin: 5px 0;
+}
+
+@media (min-width: 576px) {
+  .drum {
+    max-width: 385px;
+  }
+  .drum-machine p {
+    font-size: 20px;
+  }
+  .drum-display {
+    font-size: 28px;
+  }
 }

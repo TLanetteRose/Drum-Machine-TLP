@@ -17,7 +17,7 @@
 }
 
 * {
-  outline: 1px solid black;
+  /*outline: 1px solid black;*/
 }
 
 body {
@@ -25,7 +25,8 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: var(--color-very-lt-gray);
+  background-color: var(--color-matte-gold);
+;
 }
 
 #root {
