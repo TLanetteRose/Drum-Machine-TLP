@@ -21,24 +21,23 @@
   width: 400px;
   height: 600px;
   padding: 15px;
-  background-color: var(--color-dk-cyan);
-  margin: 0 auto;
-  margin-top: 30px;
+  background-color: var(--color-deep-navy-blue); 
+  margin: 48px auto;
   /*border-radius: 8px;*/
   outline: 5px solid var(--color-deep-navy-blue);
 
 }
 
 .drum-display {
-  width: 250px;
+  width: 240px;
   background-color: var(--color-deep-navy-blue);
   height: 5px;
   color: var(--color-matte-gold);
   text-transform: uppercase;
   font-weight: 700;
-  padding: 20px 15px;
+  padding: 20px 0px;
   text-align: center;
-  border-radius: 6px;
+  /*border-radius: 6px;*/
   margin-top: 30px;
   border: 1px solid #000000;
 }
@@ -55,3 +54,43 @@
   
 }
 
+.control {
+  width: 100px;
+  margin: auto;
+}
+
+p {
+  font-family: var(--font-text);
+  color: var(--color-very-lt-gray);
+  margin-bottom: 0;
+  text-align: center !important;
+}
+
+.select {
+  margin: auto;
+  border: 1px solid black;
+  width: 50px;
+  height: 20px;
+  padding: 1px;
+  background-color: black;
+}
+
+.inner {
+  width: 23px;
+  height: 19px;
+  background: var(--color-matte-gold);
+  border: 1px solid black;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.volume-slider {
+  background: black;
+  margin: 10px 0;
+
+}
+
+input {
+  width: 240px;
+  margin: 5px 0;
+}

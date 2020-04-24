@@ -3,14 +3,14 @@ import './styles/DrumPad.css';
 
 
 const activeStyle = {
-  backgroundColor: "var(--color-md-steel-blue)",
-  boxShadow: "0 3px var(--color-md-steel-blue)",
+  backgroundColor: "var(--color-dk-cyan)",
+  boxShadow: "0 3px var(--color-deep-sky-aqua)",
   height: 77,
   marginTop: 13
 }
 
 const inactiveStyle = {
-  backgroundColor: 'var(--color-dk-cyan)',
+  backgroundColor: 'var(--color-deep-sky-aqua)',
   marginTop: 10,
   boxShadow: "3px 3px 5px black"
 }
@@ -38,15 +38,17 @@ export default class DrumPad extends Component {
     }
     activatePad() {
       if (this.props.power) {
-        this.state.padStyle.backgroundColor === 'var(--color-md-steel-blue)' ? this.setState({
-          padStyle: inactiveStyle
-        }) : this.setState({
-          padStyle: activeStyle
-        });
+        this.state.padStyle.backgroundColor === "var(--color-dk-cyan)"
+          ? this.setState({
+              padStyle: inactiveStyle
+            })
+          : this.setState({
+              padStyle: activeStyle
+            });
       } else {
         this.state.padStyle.marginTop === 13
           ? this.setState({
-              padStyle: inactiveStyle,
+              padStyle: inactiveStyle
             })
           : this.setState({
               padStyle: {
@@ -55,19 +57,20 @@ export default class DrumPad extends Component {
                 backgroundColor: "var(--color-deep-navy-blue)",
                 boxShadow: "0 3px var(--color-deep-navy-blue)"
               }
-            });
+          });
       }
     }
     playSound(e) {
       const sound = document.getElementById(this.props.keyTrigger);
       sound.currentTime = 0;
       sound.play();
+      this.activatePad();
       setTimeout(() => this.activatePad(), 100);
-      this.props.updateDisplay(this.props.clipId.replace(/-/g,' '));
+      this.props.updateDisplay(this.props.clipId.replace(/-/g, ' '));
     }
-    render () {
+    render() {
       return (
-        <div id={this.props.clipId} onClick={this.playSound} className="drum-pad" style={this.state.padStyle}>
+        <div id={this.props.clipId} onClick={this.playSound} className="drum-pad" style={this.state.padStyle} >
           <audio className='clip' id={this.props.keyTrigger} src={this.props.clip}></audio>
           {this.props.keyTrigger}
         </div>
