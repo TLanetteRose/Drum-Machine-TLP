@@ -95,3 +95,8 @@ input {
   margin: 5px 0;
 }
 
+@media (min-width: 576px) {
+  .drum {
+    max-width: 385px;
+  }
+}
