@@ -216,9 +216,9 @@ export default class App extends Component {
                 <div style={powerSlider} className="inner" />
               </div>
             </div>
-            <p id="display" className="drum-display">
+            <h1 id="display" className="drum-display">
               {this.state.display}
-            </p>
+            </h1>
             <div className="volume-slider">
               <input
                 type="range"

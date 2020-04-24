@@ -35,11 +35,15 @@
   color: var(--color-matte-gold);
   text-transform: uppercase;
   font-weight: 700;
-  padding: 20px 0px;
+  padding: 30px 5px;
   text-align: center;
-  /*border-radius: 6px;*/
-  margin-top: 30px;
+  margin: 20px 0;
   border: 1px solid #000000;
+}
+
+ h1  {
+  vertical-align: middle;
+  padding: 10px 5px 20px;
 }
 
 .pad-bank {
@@ -48,10 +52,6 @@
  padding-bottom: 20px;
  width: 100px * 3 + 32;
  height: 80px * 3 + 32;
-}
-
-.control-container {
-  
 }
 
 .control {
@@ -91,6 +91,7 @@ p {
 }
 
 input {
-  width: 240px;
+  width: 250px;
   margin: 5px 0;
 }
+
