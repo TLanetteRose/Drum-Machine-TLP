@@ -34,20 +34,27 @@
   height: 5px;
   color: var(--color-matte-gold);
   text-transform: uppercase;
+  font-size: 26px;
   font-weight: 700;
   padding: 30px 5px;
   text-align: center;
   margin: 30px 0;
-  border: 1px solid #000000;
+  border: 1px solid var(--color-matte-gold);
 }
 
 
 .pad-bank {
  display: inline-block;
  margin: 10px;
+ padding-top: 20px;
  padding-bottom: 20px;
  width: 100px * 3 + 32;
  height: 80px * 3 + 32;
+}
+
+.control-container {
+  margin-top: -30px;
+  margin-bottom: 40px;
 }
 
 .control {
@@ -56,7 +63,7 @@
 }
 p   {
   font-family: var(--font-text);
-  font-size: 20px;
+  font-size: 24px;
   color: var(--color-very-lt-gray);
   margin-bottom: 0;
   text-align: center !important;
