@@ -23,7 +23,6 @@
   padding: 15px;
   background-color: var(--color-deep-navy-blue); 
   margin: 48px auto;
-  /*border-radius: 8px;*/
   outline: 5px solid var(--color-deep-navy-blue);
 
 }
@@ -45,11 +44,9 @@
 
 .pad-bank {
  display: inline-block;
- margin: 10px;
+ margin: 10px auto;
  padding-top: 20px;
  padding-bottom: 20px;
- width: 100px * 3 + 32;
- height: 80px * 3 + 32;
 }
 
 .control-container {
@@ -104,8 +101,12 @@ input {
   }
   .drum-machine p {
     font-size: 20px;
+    margin: auto;
   }
   .drum-display {
     font-size: 28px;
+  }
+  .pad-bank {
+    margin: auto;
   }
 }
