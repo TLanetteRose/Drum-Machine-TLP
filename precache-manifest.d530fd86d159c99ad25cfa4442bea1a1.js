@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4714a47f0d17e255ea91d0c2013ff9b3",
+    "revision": "5b98fd33737653730f97e15bec6789c8",
     "url": "/Drum-Machine-TLP/index.html"
   },
   {
-    "revision": "03f3f4d64c36730c3e2b",
-    "url": "/Drum-Machine-TLP/static/css/main.69f51d77.chunk.css"
+    "revision": "020525def37bfbfaee68",
+    "url": "/Drum-Machine-TLP/static/css/main.a2496b38.chunk.css"
   },
   {
     "revision": "805a5a6227d458ffdc98",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Drum-Machine-TLP/static/js/2.5c48189d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "03f3f4d64c36730c3e2b",
+    "revision": "020525def37bfbfaee68",
     "url": "/Drum-Machine-TLP/static/js/main.f57e2603.chunk.js"
   },
   {
